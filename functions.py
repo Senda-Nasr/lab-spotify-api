@@ -104,7 +104,6 @@ def get_audio_features_for_chunks(sp, list_of_song_ids, chunk_size=50, sleep_tim
 
     # Iterate through each chunk
     for chunk in song_id_chunks:
-        print("Collecting audio features for chunk...")
         time.sleep(sleep_time) 
         my_dict = sp.audio_features(chunk)
 
